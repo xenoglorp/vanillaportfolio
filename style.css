@@ -373,6 +373,12 @@ article .icon{
     border-radius: 2rem;
     width: 90%;
     height: 90%;
+    border: 1.25px solid hsl(0, 0%, 40%);
+}
+
+.project-img:hover{
+    border-color: #000;
+    transition: all 0.3s ease;
 }
 
 .project-title{
