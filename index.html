@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Toney - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--Start of NavBar-->
+    
+    <!-- regular nav for desktop -->
+    <nav id="desktop-nav">
+        <div class="logo">Ethan Toney</div>
+        
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            
+            </ul>
+        </div>
+
+    </nav>
+    
+    <!-- hamburger nav for mobile -->
+    <nav id="hamburger-nav">
+        <div class="logo">Ethan Toney</div>
+
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- profile section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/ethan1.svg" alt="Ethan Toney Profile Picture" id="first-pic-lol">
+        </div>
+
+        <div class="section__text">
+            <p class="section__text_p1">Hi, I'm</p>
+            <h1 class="title">Ethan Toney</h1>
+            <p class="section__text_p2">Frontend Developer</p>
+            
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-ethantoney.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href ='./#contact'">Get In Touch!</button>
+            </div>
+    
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href ='https://www.linkedin.com/in/ethanmtoney/' ">
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href ='https://github.com/xenoglorp'">
+            </div>
+        </div>
+    </section>
+    
+    <!-- about me section -->
+    <section id="about">
+        <p class="section__text_p1">Get To Know More </p>
+        <h1 class="title">About Me: </h1>
+
+         <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/ethan2.svg" class="about-pic" alt="Profile Picture">
+           </div>
+
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" class="icon" alt="Experience Icon">
+                        <h3>Experience: </h3>
+                        <p>-1 Year <br>Frontend Development</p>
+                    </div>
+
+                <div class="details-container">
+                    <img src="./assets/education.png" class="icon" alt="Education Icon">
+                    <h3>Education: </h3>
+                    <p>UPEI - Computer Science</p>
+                </div>
+            </div>
+
+            <div class="text-container">
+                <p>Eager and quick-learning Front End Developer, ready to bring your ideas to life with clean, user-friendly designs. Accompanied with boundless enthusiasm, I am determined to help you succeed. Let's build something amazing together!</p>
+            </div>
+         </div>
+      </div>
+      <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    
+    <!-- experience section -->
+    <section id="experience">
+        <p class="section__text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" alt="Experience Icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>novice</p>
+                            </div>
+                        
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" alt="Experience Icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>novice</p>
+                            </div>
+                        
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" alt="Experience Icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>novice</p>
+                            </div>
+                        
+                        </article>
+                    
+
+
+
+                    </div>
+                </div>
+                
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" alt="Experience Icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>novice</p>
+                            </div>
+                        
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" alt="Experience Icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>novice</p>
+                            </div>
+                        
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon" alt="Experience Icon">
+                            <div>
+                                <h3>Php</h3>
+                                <p>novice</p>
+                            </div>
+                        
+                       
+                     </article>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section> 
+
+    <!-- projects section -->
+    <section id="projects">
+        <p class="section__text_p1">Browse My Recent</p>
+      <h3 class="title">Projects</h3>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" class="project-img" alt="Project 1"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/xenoglorp'">Github</button>
+              
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" class="project-img" alt="Project 1"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/xenoglorp'">Github</button>
+              
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.png" class="project-img" alt="Project 1"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/xenoglorp'">Github</button>
+              
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+
+    <section id="contact">
+        <p class="section__text_p1">Get In Touch!</p>
+        <h3 class="title">Contact Me</h3>
+
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" class="icon email-icon" alt="Email Icon">
+                <p><a href="mailto:ethantoney@hotmail.com">ethantoney@hotmail.com</a></p>
+            </div>
+            
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" class="icon contact-icon" alt="LinkedIn Icon">
+                <p><a href="https://www.linkedin.com/in/ethanmtoney/">LinkedIn</a></p>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow uparrow" onclick="location.href='./#profile'">
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>                
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 - Ethan Toney. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
