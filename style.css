@@ -44,6 +44,7 @@ nav{
     font-size: 1.5rem;
 }
 
+
 a{
     color: #000;
     text-decoration: none;
@@ -161,6 +162,93 @@ section{
     display: flex;
 
 }
+
+/* projects gallery section */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+.gallery-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.gallery-item-content {
+    padding: 15px;
+}
+.gallery-item-title {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #333;
+   
+}
+.gallery-item-desc {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5%;
+}
+
+.gal-container{
+    text-align: center;
+}
+
+
+/* mini projects box thing */
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.box{
+    
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.box img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.box:hover{
+    transform: scale(1.05);
+    pointer-events: auto;
+}
+
+/*
+.box-open {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+}
+.box-container:hover .box-closed {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.box-container:hover .box-open {
+    transform: scale(1.05);
+    pointer-events: auto;
+}
+
+*/
 
 /* the profile section */
 
@@ -305,6 +393,30 @@ section{
     text-align: center;
 }
 
+.display-item{
+    transition: transform 0.8s ease-in-out; 
+}
+
+.display-item:hover{
+    animation: bounceScale 0.8s ease-in-out forwards;
+}
+
+
+@keyframes bounceScale{
+    0% {
+        transform: scale(1); /* Initial state */
+    }
+    50% {
+        transform: scale(1.1); /* Slightly larger */
+    }
+    70% {
+        transform: scale(1.05); /* Slight bounce back */
+    }
+    100% {
+        transform: scale(1.1); /* Final size */
+    }
+}
+
 .section-container{
     /* we already edited this earlier, im putting it here for tutorial sake */
     gap: 4rem;
@@ -374,6 +486,7 @@ article .icon{
     width: 90%;
     height: 90%;
     border: 1.25px solid hsl(0, 0%, 40%);
+    cursor: pointer;
 }
 
 .project-img:hover{
@@ -389,6 +502,15 @@ article .icon{
 .project-btn {
     color:#000;
     border-color: rgb(163, 163, 163);
+}
+
+/* this is just so certain thigns can have a bit of space (and for the second projects button) */
+
+.spacer{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 /* contact section */
@@ -444,4 +566,11 @@ footer p{
 
 .uparrow{
     transform: rotate(180deg);
+}
+
+/* mini projects section */
+
+.proj-main{
+    display: flex;
+    justify-content: space-evenly;
 }
